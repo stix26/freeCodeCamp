@@ -22,6 +22,32 @@ Our full-stack web development and machine learning curriculum is completely fre
 - [Platform, Build and Deployment Status](#platform-build-and-deployment-status)
 - [License](#license)
 
+## ⚡️ Local Development Setup: Required .env Files
+
+To successfully build and run this project locally, you **must** set up environment variables as follows:
+
+1. **Copy `sample.env` to `.env` in the project root:**
+   ```sh
+   cp sample.env .env
+   ```
+2. **Copy `sample.env` to `.env` in the `client` directory:**
+   ```sh
+   cp sample.env client/.env
+   ```
+
+> These `.env` files are required for the build and development scripts to work. They are ignored by git and must be created manually from the provided `sample.env` template. If you skip this step, you will see errors about missing environment variables (e.g., `CLIENT_LOCALE is not set`).
+
+### Common Pitfalls
+
+- **Running commands from the wrong directory** will result in errors like `No package.json found` or `cd: no such file or directory: client`. Always run commands from the correct directory:
+  - Project root for install/build scripts
+  - `client` directory for client-specific scripts
+
+### Demo Video
+
+You can view a demonstration of the running website here:
+[Video Demonstration of the Website](https://drive.google.com/file/d/1Kv-opuYi3YRjBcEtOR0aJOR0_yKTfBbZ/view?usp=sharing)
+
 ### Certifications
 
 freeCodeCamp.org offers several free developer certifications. Each of these certifications involves building 5 required web app projects, along with hundreds of optional coding challenges to help you prepare for those projects. We estimate that each certification will take a beginner programmer around 300 hours to earn.
